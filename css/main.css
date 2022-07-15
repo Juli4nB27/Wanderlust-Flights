@@ -219,7 +219,11 @@ pullDown
     align-items: center;
     padding: 1rem;
 }
-
+.logo_pag{
+    width: 4vw;
+    height: 4vh;
+    
+}
 .div-form{
     background-color: #F2935C;
     opacity: 95%;
