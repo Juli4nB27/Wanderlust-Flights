@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Clase 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad1a2965d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+    
+    <div class="loginContainer">
+        <div class="box">
+            <form class="login">
+                <h3 class="loginTitle">Ingrese sus datos para concretar un vuelo</h3>
+                <label for="email">Email</label>
+                <input class="emailLog" type="email" name="email" id="email" placeholder="Email">
+                <label for="nombre">Nombre</label>
+                <input class="nameLog" type="text" name="nombre" id="nombre" placeholder="Charles" minlength="3">
+                <label for="apellido">Apellido</label>
+                <input class="lastnameLog" type="text" name="apellido" id="apellido" placeholder="Xabier" minlength="3">
+                <label for="nacionalidad">Nacionalidad</label>
+                <input class="nacionalidadLog" type="text" name="nacionalidad" id="nacionalidad" placeholder="Argentina" minlength="4">
+                <label for="nacionalidad">Documento de identidad</label>
+                <input class="dniLog" type="number" name="documento" id="documento" placeholder="15.987.654" minlength="8">
+                <input class="btnSubmit" type="submit" id="submitLogin">
+            </form>
+        </div> 
+    </div>
+    <main>
+
+        <section class="contenedor">
+            <div class="img_fondo">
+                <div class="franja_logo_eslogan">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="log-titulo">
+                                    <h1 class="nom_pag">Wanderlust</h1>
+                                    <img class="logo_pag" src="img//Logo2.png" alt="logo">
+                                </div>
+                                <div class="eslg">
+                                    <p class="eslogan">Disfruta tu viaje con diversion</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                    <div class="div-form">
+                        <form id="frmVuelos" class="frm-vuelos" action="">
+                            <div class="controles">
+                                <!--BUSQUEDA ORIGEN DESTINO-->
+                                <div class="UnicoControl_datos_lugares">
+                                    <div class="UnicoControl_origen_lugares">
+                                        <div class="origenSelector">
+                                            <label class="BpkLabel_1-Origen" for="buscar_origen">Origen</label>
+                                            <div class="bpk-conteiner-01" aria-haspopup="listbox" >
+                                                <select name="buscarOrigen" class="Bpk_input_origen" id="buscar_origen"required>
+                                                    <option value="" id="origenGuardado" > </option>
+                                                    <option value="Argentina">Argentina</option>
+                                                    <option value="Brasil">Brasil</option>
+                                                    <option value="Peru">Peru</option>
+                                                    <option value="Uruguay">Uruguay</option>
+                                                    <option value="Chile">Chile</option>
+                                                    <option value="Marruecos">Marruecos</option>
+                                                    <option value="Estados Unidos">Estados Unidos</option>
+                                                    <option value="Mexico">Mexico</option>
+                                                    <option value="Canada">Canada</option>
+                                                    <option value="España">España</option>
+                                                    <option value="Canada">Canada</option>
+                                                    <option value="Francia">Francia</option>
+                                                    <option value="Italia">Italia</option>
+                                                </select>
+                                                <div class="Bpk-Sugerencia-Automatica-origen" id="react-orgien-busqueda"
+                                                    role="listbox"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="UnicoControl_destino_lugares">
+                                        <div>
+                                            <label class="BpkLabel_1-Destino" for="buscar_destino">Destino</label>
+                                            <div class="bpk-conteiner-02" role="combobox" aria-haspopup="listbox">
+                                                <select class="Bpk_input_destino" name="buscarDestino"id="buscar_destino" required>
+                                                    <option value="" id="destinoGuardado"> </option>
+                                                    <option value="Argentina">Argentina</option>
+                                                    <option value="Brasil">Brasil</option>
+                                                    <option value="Peru">Peru</option>
+                                                    <option value="Uruguay">Uruguay</option>
+                                                    <option value="Chile">Chile</option>
+                                                    <option value="Estados Unidos">Estados Unidos</option>
+                                                    <option value="España">España</option>
+                                                    <option value="Marruecos">Marruecos</option>
+                                                    <option value="Canada">Canada</option>
+                                                    <option value="Francia">Francia</option>
+                                                    <option value="Italia">Italia</option>
+                                                    <option value="Italia">Mexico</option>
+                                                </select>
+                                                <div class="Bpk-Sugerencia-Automatica-destino"
+                                                    id="react-destino-busqueda" role="listbox">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--RADIO BTN IDA Y VUELTA SOLO IDA-->
+                                <div class="rbt-btnBuscar">
+                                    <div class="div-chk">
+                                        <label class="Bpk-radio-ida_vuelta">
+                                            <input class="bpkRadio_btn_input_chk01" type="radio" name="idaSelec"
+                                                aria-label="Ida y vuelta" value="Ida y vuelta"id="select_ida_vuelta" checked>
+                                            <div class="btn_rad_circulo_02"></div>
+                                            <span>Ida y vuelta</span>
+                                        </label>
+                                        <label class="Bpk-radio-ida">
+                                            <input class="bpkRadio_btn_input_chk02" type="radio" min="date" max="1-10-22" name="idaSelec" value="Solo ida"
+                                                id="select_ida">
+                                            <div class="btn_rad_circulo_02"></div>
+                                            <span>Solo ida</span>
+                                        </label>
+                                    </div>
+                                    <div class="btn-buscar">
+                                        <input  class="input-btn" type="submit" value="Buscar" id="boton">
+                                    </div>
+                                </div>
+                                <!--FECHAS IDA Y VUELTA-->
+                                <!--IDA  -->
+                                <div class="UnicoControl_fechas">
+                                    <div class="UnicoControl_fecha_ida">
+                                        <div class="idaSelector">
+                                            <label class="BpkLabel_1-ida" for="fecha_ida">Ida</label>
+                                            <div class="bpk-conteiner-01-ida" aria-haspopup="listbox">
+                                                <input type="date" class="Bpk_input_ida" id="fecha_ida" min="2022-07-04" max="2022-10-01" name="fecha_ida" 
+                                                    min="2022-06-22"placeholder="dd/mm/aaaa" dir="auto"required >
+                                                <div class="Bpk-Sugerencia-Automatica-ida" id="react-ida-busqueda"
+                                                    role="listbox"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--VUELTA -->
+                                    <div class="UnicoControl_fecha_vuelta">
+                                        <div class="vueltaSelector">
+                                            <label class="BpkLabel_1-vuelta" for="fecha_vuelta"
+                                                aria-hidden="true">Vuelta</label>
+                                            <div class="bpk-conteiner-02-vuelta" role="combobox" aria-haspopup="listbox"
+                                                aria-expanded="false">
+                                                <input type="date"  min="2022-07-04" max="2022-10-01" class="Bpk_input_vuelta"
+                                                    id="fecha_vuelta" name="fecha_vuelta"dir="auto"required>
+                                                <div class="Bpk-Sugerencia-Automatica-vuelta" id="react-vuelta-busqueda"
+                                                    role="listbox"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                            <input type="hidden" name="pais" id="inputSelect" value="">  
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div id="contTicket" class="contenido" >
+                <div class="mainTicket">
+                    <img class="imgTicket" src="img/Logo2.png" alt="">
+                    <h2>Wanderlust</h2>
+                    <div class="div_OrgDest">  
+                        <div class="orgDest">
+                            <p>Origen</p> 
+                            <span class="spanOrg" id="origenTicket"></span>
+                            <p>Ida</p>
+                            <p class="spanIda" id="fecha__ida" ></p>
+                            <p >Clase</p>
+                            <span class="classTicket" id="claseTicket"></span>
+                            
+                        </div>
+                        <div class="idaVueltaClass">
+                            <p>Destino</p>
+                            <span class="spanDest" id="destinoTicket"></span>
+                            <p>Vuelta</p>
+                            <p class="spanVuelta" id="fecha__vuelta"></p>
+                            <p class="pViajeros" >Viajeros</p>
+                            <span class="spnViajeros" id="cantViajeros"></span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="secTicket">
+                    <div class="infPrecio">
+                        <span class="infPrecioTotal">Precio total</span>
+                        <span class="infPersonaPrecio">Por persona</span>
+                    </div>
+                    <div class="precioTotal">
+                        <p>$</p>
+                        <span id="precioTicket"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contJSON">
+
+            </div>
+            <div id="contenidoFetch" class="conte">
+                <div  id="resultado">
+
+                </div>
+            </div>
+        </section>
+        
+        <script src="js/ajax.js"></script>
+        <script src="js/script.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+    </main>
+    
+</body>
+
+</html>
