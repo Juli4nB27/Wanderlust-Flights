@@ -1,0 +1,17 @@
+//Estilos generales
+@import "footer";
+
+//Variablres
+@import "mainPages/breakPoints";
+
+//Estilos paginas
+@import "mainPages/index"; 
+
+
+*{
+    padding: 0;
+    margin: 0;
+    width: auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}

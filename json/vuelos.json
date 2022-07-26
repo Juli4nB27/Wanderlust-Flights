@@ -1,21 +1,31 @@
 [
    {
-    "url" : "img/NewYorkJSON.png",
+    "url" : "img/newYork-Fetch.png",
     "Desc" : "New York, Estados Unidos",
     "Id" : 1
    },
    {
-    "url" : "img/ParisJSON.png",
+    "url" : "img/paris-Fetch.png",
     "Desc" : "Paris, Francia",
     "Id" : 2
    },
    {
-    "url" : "img/MexicoJSON.png",
+    "url" : "img/cancun-Fetch.png",
     "Desc" : "Cancun, Mexico",
     "Id" : 3
    },
    {
-    "url" : "img/MadridJSON.png",
+    "url" : "img/madrid-Fetch.png",
+    "Desc" : "Madrid, España",
+    "Id" : 4
+   },
+   {
+    "url" : "img/roma-Fetch.png",
+    "Desc" : "Madrid, España",
+    "Id" : 4
+   },
+   {
+    "url" : "img/buenosAires-Fetch.png",
     "Desc" : "Madrid, España",
     "Id" : 4
    }

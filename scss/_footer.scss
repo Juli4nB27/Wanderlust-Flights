@@ -1,0 +1,76 @@
+footer {
+    color: black;
+    background-color: #d18152;
+    font-weight: 1rem;
+    position: relative;
+    top: 60rem;
+    .tituloFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 3rem 1rem 2rem 1rem;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    .secDosFooter {
+        div {
+            .h4Redes {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0rem 0rem 0rem 1.1rem;
+
+            }
+
+            .redesFooter {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0rem 1rem 1rem 1.1rem;
+                gap: 1rem;
+
+                    a {
+                        .instagramFooter {
+                            width: 1vw;
+                        }
+                    }
+
+                    a {
+                        .twitterFooter {
+                            width: 1vw;
+                        }
+                    }
+
+                    a {
+                        .facebookFooter {
+                            width: 1vw;
+                        }
+                    }
+
+                    a {
+                        .linkedinFooter {
+                            width: 1vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+.footFooter {
+    position: relative;
+    top: 59rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 1rem;
+}
+
+.footFooter h4 {
+    font-size: 0.8rem;
+
+}

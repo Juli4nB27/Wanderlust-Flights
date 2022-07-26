@@ -13,6 +13,7 @@ fetch('/json/vuelos.json')
         card.innerHTML = 
         `<img src="${url}" alt="">`
         ;
+
         resultadoJSON.append(card);
     }
 })

@@ -10,8 +10,6 @@ let inpfechaV = localStorage.getItem('fechaVuelta');
 const rbtIdayVuelta = document.getElementById("select_ida_vuelta");
 const rbtSoloIda = document.getElementById("select_ida");
 
-
-
 //Boton buscar
 const btnBuscar = document.getElementById("boton");
 
@@ -19,7 +17,7 @@ const mostrarContenido = document.getElementById("mostrarContenido");
 //Form
 const formulario = document.querySelector('#frmVuelos');
 
-//inputs origen destin
+//inputs origen destino
 const origen = document.querySelector('#buscar_origen');
 const destino = document.querySelector('#buscar_destino');
 const contenidoDestino = document.querySelector('#destinoGuardado');
@@ -29,6 +27,7 @@ const contFormulario = document.querySelector('#div-form');
 //Inputs fechas 
 const fechaIda = document.querySelector('#fecha_ida');
 const fechaVuelta = document.querySelector('#fecha_vuelta');
+//TICKETS
 const fecha_Ida = document.querySelector('#fecha__ida');
 const fecha_Vuelta = document.querySelector('#fecha__vuelta');
 //Ticket 
@@ -237,11 +236,11 @@ let tipoViaje2;
 
 
 const ocultarFormulario = () => {
-  modal.style.display= 'none';
+
   contenidoOrigen.innerHTML = `${inporigen}`;
   contenidoDestino.innerHTML = `${inpdestino}`;
 }
-  
+modal.style.display= 'none';
   
 formulario.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -255,12 +254,12 @@ formulario.addEventListener('submit', (e) => {
   localStorage.setItem('fechaVuelta', fechaVuelta.value);
   modal.style.display = '';     
 })
-
+ 
 if (!!inpdestino && !!inpdestino && !!inpfechaI && !!inpfechaV) {
     ocultarFormulario();
 }
 //Guarda y actualiza el form de busqueda      
-origen.addEventListener('input', (e) => {
+  origen.addEventListener('input', (e) => {
   sessionStorage.setItem('inporigen', e.target.value);
   })
   
@@ -287,7 +286,7 @@ formulario.addEventListener('submit', (e) =>{
         title: 'Oops...',
         text: 'No se puede agregar dos paises iguales!',
       })
-    modal.style.display= 'none';
+    
     break
   }
   } 
@@ -325,8 +324,6 @@ formulario.addEventListener('submit', (e) =>{
     detalleDest.textContent= `${vuelo.destino}`;
     precioVuelo.textContent = `${vuelo.precio}`;
     Detalleclase.textContent=`${vuelo.clase}`;
-    fechaIda.textContent = `${vuelo.precio}`;
-    fechaVuelta.textContent=`${vuelo.clase}`;
     fecha_Ida.innerHTML = `${inpfechaI}`;
     fecha_Vuelta.innerHTML = `${inpfechaV}`;
     viajerosIngrsados.innerHTML = `${vuelo.viajeros}`;
