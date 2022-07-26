@@ -2,7 +2,7 @@
 const resultadoJSON = document.getElementById('resultado');
 
 
-fetch('/json/vuelos.json')
+fetch('vuelos.json')
     .then(res => res.json())
     .then(resultado = (vuelo) => {
     for(const vuelos of vuelo){
